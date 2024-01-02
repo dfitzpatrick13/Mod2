@@ -1,0 +1,15 @@
+basic idea of how i want the website to work 
+
+nav bar 
+homepage- will redirect home
+-talk about how the site will let you search the podex for a pokemon
+- show random featured pokemon you can click through for the day
+
+
+pokedex
+- search bar to be able to search by name or dex number of mon
+-images of pokemon
+-dex number of mon
+- typing of pokemon
+
+
