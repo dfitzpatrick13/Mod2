@@ -2,7 +2,7 @@ const NavBar = () => {
 
     return ( 
         <nav className="navbar">
-            <h1>Pokemon Api Website</h1>
+            <h1>Pokemon info Site</h1>
             <div className="links">
                 <a href="/">Home</a>
                 <a href="/pokedex">Pokedex</a>
