@@ -1,5 +1,4 @@
-import Pokedex from "./Pokedex";
-
+import Pokeball from "./Pokeball-18.png"
 
 
 const NavBar = () => {
@@ -11,6 +10,7 @@ const NavBar = () => {
                 <a href="/">Home</a>
                 <a href="/pokedex">Pokedex</a>
                 </div>
+            <img className="pokeball" src={Pokeball} />
         </nav>
 
 

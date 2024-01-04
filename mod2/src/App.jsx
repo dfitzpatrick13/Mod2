@@ -8,6 +8,11 @@ function App() {
   return (
     <div>
       <NavBar/>
+      <br></br>
+        <div className=" title of webstie">
+         <h2> Search Information about your favorite pokemon </h2>
+        </div>
+        <br></br>
       <div className='content'>
         <Pokedex/>
       </div>
