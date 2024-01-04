@@ -22,3 +22,76 @@
 .links a:hover {
   color: #ff0000;
 }
+
+/* Pokedex.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Container styles */
+.pokedex-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Search container styles */
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Search input styles */
+.search-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Search button styles */
+.search-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #f37021;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Pokemon details container styles */
+.pokemon-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pokemon name styles */
+.pokemon-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Pokemon image styles */
+.pokemon-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}

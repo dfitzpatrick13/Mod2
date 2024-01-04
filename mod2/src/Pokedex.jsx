@@ -45,6 +45,16 @@ const Pokedex = () => {
             src={pokemonData.sprites.front_default}
             alt={pokemonData.name}
           />
+          <p>Height: {pokemonData.height}</p>
+          <p>Weight: {pokemonData.weight}</p>
+          <p>Abilities:</p>
+
+          <ul>
+            {pokemonData.abilities.map((ability, index) => (
+              <li key={index}>{ability.ability.name}</li>
+            ))}
+          </ul>
+          
         </div>
       )}
     </div>
