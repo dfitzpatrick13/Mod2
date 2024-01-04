@@ -3,6 +3,8 @@ import React, { useState } from "react";
 const Pokedex = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [pokemonData, setPokemonData] = useState(null);
+  const [previews, setPreviews] = useState([]);
+
 
   const handleSearch = async () => {
     try {
@@ -17,7 +19,7 @@ const Pokedex = () => {
       );
 
       const data = await response.json();
-      console.log(data); // Check the API response in the console
+      console.log(data); 
       setPokemonData(data);
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -48,6 +50,7 @@ const Pokedex = () => {
           <p>Height: {pokemonData.height}</p>
           <p>Weight: {pokemonData.weight}</p>
           <p>Abilities:</p>
+          <p>Moves:</p>
 
           <ul>
             {pokemonData.abilities.map((ability, index) => (
