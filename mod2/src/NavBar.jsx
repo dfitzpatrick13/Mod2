@@ -1,3 +1,7 @@
+import Pokedex from "./Pokedex";
+
+
+
 const NavBar = () => {
 
     return ( 
