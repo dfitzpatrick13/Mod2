@@ -1,6 +1,6 @@
 /* NavBar.css */
 .navbar {
-  background-color: #ffcc00;
+  background-color: #3B4CCA;
   border-bottom: 2px solid #000;
   padding: 10px 20px;
 }
@@ -94,4 +94,48 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
+}
+
+
+/* Styles for the container */
+.pokemondata {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styles for the heading */
+.pokemondata h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+/* Styles for the image */
+.pokemondata img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Styles for the details */
+.pokemondata p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Styles for the abilities list */
+.pokemondata ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pokemondata li {
+  margin-bottom: 3px;
+  font-size: 14px;
+  text-transform: capitalize;
 }

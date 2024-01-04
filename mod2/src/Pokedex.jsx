@@ -39,7 +39,7 @@ const Pokedex = () => {
       <button onClick={handleSearch}>Search</button>
 
       {pokemonData && (
-        <div>
+        <div className="pokemondata">
           <h2>{pokemonData.name}</h2>
           <img
             src={pokemonData.sprites.front_default}
@@ -54,7 +54,7 @@ const Pokedex = () => {
               <li key={index}>{ability.ability.name}</li>
             ))}
           </ul>
-          
+
         </div>
       )}
     </div>
