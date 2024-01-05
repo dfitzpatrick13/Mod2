@@ -37,7 +37,7 @@ const Pokedex = () => {
         placeholder="Search Pokemon"
         value={searchTerm}
         onChange={handleInputChange}
-      />
+      />s
       <button onClick={handleSearch}>Search</button>
 
       {pokemonData && (
@@ -47,6 +47,7 @@ const Pokedex = () => {
             src={pokemonData.sprites.front_default}
             alt={pokemonData.name}
           />
+          <p>Evolutions:</p>
           <p>Height: {pokemonData.height}</p>
           <p>Weight: {pokemonData.weight}</p>
           <p>Abilities:</p>

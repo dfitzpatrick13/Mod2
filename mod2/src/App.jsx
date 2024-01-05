@@ -10,7 +10,7 @@ function App() {
       <NavBar/>
       <br></br>
         <div className=" title of webstie">
-         <h2> Search Information about your favorite pokemon </h2>
+         <h2></h2>
         </div>
         <br></br>
       <div className='content'>
