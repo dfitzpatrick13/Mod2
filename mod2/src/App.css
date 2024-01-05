@@ -147,3 +147,15 @@ body {
   width: 40px; 
   height: 40px; 
 }
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-gap: 10px; 
+}
+
+.pokemon-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
