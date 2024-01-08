@@ -59,7 +59,7 @@ const Pokedex = () => {
 
   return (
     <div>
-      <h1>Search Pokemon by Name</h1>
+      <h1 className="title">Search Pokemon by Name</h1>
       <input className="search-input"
         type="text"
         placeholder="Search Pokemon"
