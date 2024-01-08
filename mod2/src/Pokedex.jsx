@@ -57,13 +57,13 @@ const Pokedex = () => {
   return (
     <div>
       <h1>Search Pokemon by Name</h1>
-      <input
+      <input className="search-input"
         type="text"
         placeholder="Search Pokemon"
         value={searchTerm}
         onChange={handleInputChange}
       />
-      <button onClick={handleSearch}>Search</button>
+      <button className="search-button" onClick={handleSearch}>Search</button>
 
       {pokemonData && (
         <div className="pokemondata">
@@ -83,7 +83,7 @@ const Pokedex = () => {
           </ul>
         </div>
       )}
-      
+
       <div className="pokemonGrid">
         {pokemonList.map((pokemon, index) => (
           <div key={index} className="pokemonCard">

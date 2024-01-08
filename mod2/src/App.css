@@ -148,14 +148,15 @@ body {
   height: 40px; 
 }
 
-.pokemon-grid {
+.pokemonGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
   grid-gap: 10px; 
 }
 
-.pokemon-item {
-  border: 1px solid #ccc;
+.pokemonCard{
+  border: 1px solid #ffffff;
   padding: 10px;
   text-align: center;
 }
+
