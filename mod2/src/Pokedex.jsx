@@ -57,6 +57,14 @@ const Pokedex = () => {
     setSearchTerm(event.target.value);
   };
 
+  //handle click for the pokemon grid 
+  const handlePokemonClick = async (pokemonName) => {
+    const data = await fetchPokemonData(pokemonName);
+    setPokemonData(data);
+  };
+  
+
+
   return (
     <div>
       <h1 className="title">Search Pokemon by Name</h1>
@@ -76,29 +84,28 @@ const Pokedex = () => {
             src={pokemonData.sprites.front_default}
             alt={pokemonData.name}
           />
-          <p className="pokemondata p">Evolutions:</p>
           <p className="pokemondata p">Height: {pokemonData.height}</p>
           <p className="pokemondata p">Weight: {pokemonData.weight}</p>
-          <p className="pokemondata p">Abilities:</p>
-          <ul className="pokemondata p" s>
-            {pokemonData.abilities.map((ability, index) => (
-              <li key={index}>{ability.ability.name}</li>
-            ))}
-          </ul>
         </div>
       )}
 
-      <div className="pokemonGrid">
-        {pokemonList.map((pokemon, index) => (
-          <div key={index} className="pokemonCard">
-            <img className="pokemon-image"
-              src={pokemon.sprites.front_default}
-              alt={pokemon.name}
-            />
-            <p>{pokemon.name}</p>
-          </div>
-        ))}
-      </div>
+<div className="pokemonGrid">
+  {pokemonList.map((pokemon, index) => (
+    <div
+      key={index}
+      className="pokemonCard"
+      onClick={() => handlePokemonClick(pokemon.name)}
+    >
+      <img
+        className="pokemon-image"
+        src={pokemon.sprites.front_default}
+        alt={pokemon.name}
+      />
+      <p>{pokemon.name}</p>
+    </div>
+  ))}
+</div>
+
 
       
     </div>
