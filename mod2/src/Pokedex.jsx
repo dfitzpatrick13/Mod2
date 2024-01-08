@@ -5,6 +5,7 @@ const Pokedex = () => {
   const [pokemonData, setPokemonData] = useState(null);
   const [pokemonList, setPokemonList] = useState([]);
 
+  //calling api for search bar
   const fetchPokemonData = async (pokemonName) => {
     try {
       const response = await fetch(
@@ -24,6 +25,7 @@ const Pokedex = () => {
     }
   };
 
+  //using api for the list 
   useEffect(() => {
     const fetchPokemonList = async () => {
       const pokemonNames = [
@@ -33,7 +35,7 @@ const Pokedex = () => {
 
       const pokemonDataList = await Promise.all(
         pokemonNames.map(async (name) => {
-          return fetchPokemonData(name.toLowerCase());
+          return fetchPokemonData(name);
         })
       );
 
@@ -43,13 +45,14 @@ const Pokedex = () => {
     fetchPokemonList();
   }, []);
 
+  //handle search
   const handleSearch = async () => {
     if (!searchTerm) return;
 
     const data = await fetchPokemonData(searchTerm);
     setPokemonData(data);
   };
-
+//evt change
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
   };
@@ -64,6 +67,7 @@ const Pokedex = () => {
         onChange={handleInputChange}
       />
       <button className="search-button" onClick={handleSearch}>Search</button>
+      <br></br>
 
       {pokemonData && (
         <div className="pokemondata">
@@ -72,11 +76,11 @@ const Pokedex = () => {
             src={pokemonData.sprites.front_default}
             alt={pokemonData.name}
           />
-          <p>Evolutions:</p>
-          <p>Height: {pokemonData.height}</p>
-          <p>Weight: {pokemonData.weight}</p>
-          <p>Abilities:</p>
-          <ul>
+          <p className="pokemondata p">Evolutions:</p>
+          <p className="pokemondata p">Height: {pokemonData.height}</p>
+          <p className="pokemondata p">Weight: {pokemonData.weight}</p>
+          <p className="pokemondata p">Abilities:</p>
+          <ul className="pokemondata p" s>
             {pokemonData.abilities.map((ability, index) => (
               <li key={index}>{ability.ability.name}</li>
             ))}
