@@ -32,12 +32,14 @@ const Pokedex = () => {
 
   return (
     <div>
+        <h1 className="titletext">Search Pokemon by Name </h1>
       <input
         type="text"
         placeholder="Search Pokemon"
         value={searchTerm}
         onChange={handleInputChange}
       />
+    
       <button onClick={handleSearch}>Search</button>
 
       {pokemonData && (
