@@ -67,8 +67,8 @@ const Pokedex = () => {
 
       {pokemonData && (
         <div className="pokemondata">
-          <h2>{pokemonData.name}</h2>
-          <img
+          <h2 className="pokemondata h2">{pokemonData.name}</h2>
+          <img className="pokemondata img"
             src={pokemonData.sprites.front_default}
             alt={pokemonData.name}
           />
@@ -87,7 +87,7 @@ const Pokedex = () => {
       <div className="pokemonGrid">
         {pokemonList.map((pokemon, index) => (
           <div key={index} className="pokemonCard">
-            <img
+            <img className="pokemon-image"
               src={pokemon.sprites.front_default}
               alt={pokemon.name}
             />
