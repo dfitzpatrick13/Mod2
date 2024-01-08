@@ -8,7 +8,6 @@ const NavBar = () => {
             <h1>Pokemon Information </h1>
             <div className="links">
                 <a href="/">Home</a>
-                <a href="/pokedex">Pokedex</a>
                 </div>
             <img className="pokeball" src={Pokeball} />
         </nav>

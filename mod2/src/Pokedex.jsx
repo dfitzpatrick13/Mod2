@@ -96,17 +96,16 @@ const Pokedex = () => {
 
 <div className="pokemonGrid">
   {pokemonList.map((pokemon, index) => (
-    <div
+    <div className="pokemonCard"
       key={index}
-      className="pokemonCard"
       onClick={() => handlePokemonClick(pokemon.name)}
     >
-      <img
-        className="pokemon-image"
+      <img className="pokemon-image"
+        
         src={pokemon.sprites.front_default}
         alt={pokemon.name}
       />
-      <p>{pokemon.name}</p>
+      <p >{pokemon.name}</p>
     </div>
   ))}
 </div>
