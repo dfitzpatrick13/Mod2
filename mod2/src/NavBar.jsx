@@ -5,7 +5,7 @@ const NavBar = () => {
 
     return ( 
         <nav className="navbar">
-            <h1>Pokemon Information </h1>
+            <h1>Poke Pedia </h1>
             <div className="links">
                 <a href="/">Home</a>
                 </div>
