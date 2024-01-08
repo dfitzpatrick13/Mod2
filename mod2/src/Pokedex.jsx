@@ -68,13 +68,18 @@ const Pokedex = () => {
   return (
     <div>
       <h1 className="title">Search Pokemon by Name</h1>
+
+      <div className="search-container">
+
       <input className="search-input"
         type="text"
         placeholder="Search Pokemon"
         value={searchTerm}
         onChange={handleInputChange}
       />
+      
       <button className="search-button" onClick={handleSearch}>Search</button>
+      </div>
       <br></br>
 
       {pokemonData && (

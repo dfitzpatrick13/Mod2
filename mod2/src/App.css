@@ -48,32 +48,33 @@ body {
 /* Search container styles */
 .search-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
 /* Search input styles */
 .search-input {
-  display: flex ;
-  flex: 1;
+  width: 200px; 
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 /* Search button styles */
 .search-button {
-  display: flex;
+  
   padding: 10px 20px;
-  margin-left: 10px;
   background-color: #f37021;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  margin-left: -15;
+  
 }
 
 /* Pokemon details container styles */
