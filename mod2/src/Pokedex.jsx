@@ -52,7 +52,7 @@ const Pokedex = () => {
     const data = await fetchPokemonData(searchTerm);
     setPokemonData(data);
   };
-//evt change
+//evnt change
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
   };
