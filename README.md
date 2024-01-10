@@ -1,4 +1,8 @@
 # React + Vite
+react 
+vite
+javascript
+
 
 this is a simple react api website
 You can search any pokemons name and get simple data on it
